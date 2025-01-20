@@ -15,9 +15,13 @@ Iodine has no configure script. There are two optional features for Linux
 relevant header files are found in `/usr/include`.
 (See script at `./src/osflags`)
 
+Run `nix-shell` to enter the dev shell. 
+
+The compiler can be chosen via `CC` environment varaible. The default is `clang`. 
+
 Run `make` to compile the server and client binaries.
 Run `make install` to copy binaries and manpage to the destination directory.
-Run `make test` to compile and run the unit tests. (Requires the `check` library)
+Run `make test` to compile and run the unit tests. Requires the `check` library. (Included in `shell.nix` by default)
 
 
 QUICKSTART
